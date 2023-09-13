@@ -13,7 +13,7 @@ FROM sakila.address
 WHERE district like 'K%a'
 	and POSITION(' ' IN district) = 0;
 ```
-
+![alt text](https://github.com/Roman-Teterevlev/SYS-21_12-03/blob/main/12-03_1.png)
 
 ### Задание 2
 
@@ -26,7 +26,7 @@ FROM sakila.payment
 WHERE Date(payment_date) between '2005-06-15' and '2005-06-18'
 	and amount > 10.0;
 ```
-
+![alt text](https://github.com/Roman-Teterevlev/SYS-21_12-03/blob/main/12-03_2.png)
 
 ### Задание 3
 
@@ -39,7 +39,7 @@ FROM sakila.rental
 ORDER BY rental_date DESC
 LIMIT 5;
 ```
-
+![alt text](https://github.com/Roman-Teterevlev/SYS-21_12-03/blob/main/12-03_3.png)
 
 ### Задание 4
 
@@ -55,5 +55,5 @@ SELECT REPLACE(LOWER(first_name), 'll', 'pp'), LOWER(last_name), active
 FROM sakila.customer
 WHERE first_name IN ('Kelly', 'Willie') and active = 1;
 ```
-
+![alt text](https://github.com/Roman-Teterevlev/SYS-21_12-03/blob/main/12-03_4.png)
 
